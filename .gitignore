@@ -4,6 +4,7 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+intellij-java-google-style.xml
 
 ### STS ###
 .apt_generated
