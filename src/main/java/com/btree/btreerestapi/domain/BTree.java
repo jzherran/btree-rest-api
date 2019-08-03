@@ -12,6 +12,8 @@ import lombok.ToString.Exclude;
 @RequiredArgsConstructor
 public class BTree {
 
+  @Expose private long id;
+
   @Exclude private boolean wsx;
 
   @Exclude private boolean wsy;
