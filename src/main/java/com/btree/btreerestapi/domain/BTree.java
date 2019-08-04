@@ -4,11 +4,13 @@ import com.google.gson.annotations.Expose;
 import java.util.Objects;
 import java.util.Optional;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString.Exclude;
 
 @Data
+@NoArgsConstructor
 @RequiredArgsConstructor
 public class BTree {
 
