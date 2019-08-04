@@ -3,8 +3,6 @@ package com.btree.btreerestapi.controller;
 import com.btree.btreerestapi.domain.BTree;
 import com.btree.btreerestapi.service.BTreeService;
 import com.google.gson.GsonBuilder;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/api/v1/b-tree")
-@Api(value = "B-Tree Controller")
 public class BTreeController {
 
   private BTreeService service;
@@ -32,7 +29,6 @@ public class BTreeController {
    * @return a list of {@link BTree}
    */
   @GetMapping
-  @ApiOperation("Get all B-Tree stored in H2 database")
   public ResponseEntity<List<BTree>> getAllBTrees() {
     log.debug("Controller :: Get request for return all B-Trees");
     return ResponseEntity.ok(service.getAllBTrees());
